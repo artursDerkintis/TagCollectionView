@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import TagCollectionView
+
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tagCollectionView: TagCollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        var tags = [Tag]()
+        for i in 0...50 {
+            tags.append(Tag(title: "some tag \(i)"))
+        }
+        tagCollectionView.tags = tags
+        tagCollectionView.selectedTags = [Tag(title: "some tag 30"), Tag(title: "some tag 45")]
     }
 
     override func didReceiveMemoryWarning() {

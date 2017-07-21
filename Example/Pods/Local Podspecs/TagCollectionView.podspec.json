@@ -1,0 +1,22 @@
+{
+  "name": "TagCollectionView",
+  "version": "0.1.0",
+  "summary": "A short description of TagCollectionView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Arturs Derkintis/TagCollectionView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Arturs Derkintis": "artursderkintis@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Arturs Derkintis/TagCollectionView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TagCollectionView/Classes/**/*"
+}

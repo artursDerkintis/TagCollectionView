@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'TagCollectionView/Classes/**/*'
   
   # s.resource_bundles = {
-  #   'TagCollectionView' => ['TagCollectionView/Assets/*.png']
+#   'TagCollectionView' => ['TagCollectionView/Assets/*.{png,xib}']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

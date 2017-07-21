@@ -1,0 +1,16 @@
+PODS:
+  - TagCollectionView (0.1.0)
+
+DEPENDENCIES:
+  - TagCollectionView (from `~/TagCollectionView`)
+
+EXTERNAL SOURCES:
+  TagCollectionView:
+    :path: ~/TagCollectionView
+
+SPEC CHECKSUMS:
+  TagCollectionView: 20fca7e12c77f4f06cbf78626b6967ac8d1d6e36
+
+PODFILE CHECKSUM: b069a1ff11902612d4d29e92f58042c0a93965cc
+
+COCOAPODS: 1.2.1

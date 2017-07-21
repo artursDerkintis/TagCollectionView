@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TagCollectionView_Example' do
+  pod 'TagCollectionView', :path => '../'
+
+  target 'TagCollectionView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

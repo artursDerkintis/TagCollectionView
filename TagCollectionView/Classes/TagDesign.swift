@@ -21,7 +21,7 @@ public struct TagDesign {
     static var defaultNormalDesign: TagDesign {
         return TagDesign(backgroudColor: .white, cornerRadius: 0.0, borderWidth: 2.0, borderColor: .blue, font: UIFont.systemFont(ofSize: 8), textColor: .black)
     }
-    init(backgroudColor: UIColor = .clear,
+    public init(backgroudColor: UIColor = .clear,
          cornerRadius: CGFloat = 0.0,
          borderWidth: CGFloat = 2.0,
          borderColor: UIColor = .clear,

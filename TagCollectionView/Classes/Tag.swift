@@ -9,7 +9,7 @@
 import UIKit
 
 public struct Tag {
-    let title: String
+    public let title: String
     public init(title: String) {
         self.title = title
     }

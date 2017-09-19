@@ -12,6 +12,7 @@ public class TagCollectionViewLayout: UICollectionViewFlowLayout {
     var maxCellSpacing: CGFloat = 2.0
     public override init() {
         super.init()
+
         self.minimumInteritemSpacing = maxCellSpacing
         self.minimumLineSpacing = maxCellSpacing
     }
@@ -23,7 +24,7 @@ public class TagCollectionViewLayout: UICollectionViewFlowLayout {
             return nil
         }
         for attributes in attributesForElementsInRect {
-            if attributes.representedElementKind?.isEmpty ?? false{
+            if attributes.representedElementKind == nil {
                 let indexPath = attributes.indexPath
                 attributes.frame = self.layoutAttributesForItem(at: indexPath)?.frame ?? .zero
             }
@@ -34,31 +35,32 @@ public class TagCollectionViewLayout: UICollectionViewFlowLayout {
         guard let currentAttributes = super.layoutAttributesForItem(at: indexPath) else {
             return nil
         }
+
         if indexPath.item == 0 {
             var frame = currentAttributes.frame
             frame.origin.x = sectionInset.left
             currentAttributes.frame = frame
+            print("T \(currentAttributes.frame)")
             return currentAttributes
         }
         let previousIndexPath = IndexPath(item: indexPath.item - 1, section: indexPath.section)
         if let previousFrame = self.layoutAttributesForItem(at: previousIndexPath)?.frame {
-            let previousFrameRightPoint = previousFrame.origin.x + previousFrame.size.width + maxCellSpacing
+            let pp = previousFrame.origin.x + previousFrame.width + maxCellSpacing
             let currentFrame = currentAttributes.frame
             let strechedCurrentFrame = CGRect(x: 0, y: currentFrame.origin.y, width: collectionView?.frame.width ?? 0, height: currentFrame.height)
             if !previousFrame.intersects(strechedCurrentFrame) {
                 var frame = currentAttributes.frame
                 frame.origin.x = sectionInset.left
                 currentAttributes.frame = frame
+                print("L \(currentAttributes.frame)")
                 return currentAttributes
             }
             var frame = currentAttributes.frame
-            frame.origin.x = previousFrameRightPoint
+            frame.origin.x = pp
             currentAttributes.frame = frame
+            print("X \(currentAttributes.frame)")
             return currentAttributes
         }
         return nil
-    }
-    public override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
-        return true
     }
 }

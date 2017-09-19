@@ -17,10 +17,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         var tags = [Tag]()
         for i in 0...5000 {
-            tags.append(Tag(title: "tag \(i)"))
+            tags.append(Tag(title: "terojonf eag \(i)"))
         }
         tagCollectionView.tags = tags
-        tagCollectionView.selectedTags = [Tag(title: "some tag 30"), Tag(title: "some tag 45")]
+        tagCollectionView.cellHeight = 35
+        tagCollectionView.selectedTags = [Tag(title: "some tag fdinf  30"), Tag(title: "some tag 45")]
     }
 
     override func didReceiveMemoryWarning() {

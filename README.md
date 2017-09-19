@@ -1,6 +1,5 @@
 # TagCollectionView
 
-[![CI Status](http://img.shields.io/travis/artursDerkintis/TagCollectionView.svg?style=flat)](https://travis-ci.org/Arturs Derkintis/TagCollectionView)
 [![Version](https://img.shields.io/cocoapods/v/TagCollectionView.svg?style=flat)](http://cocoapods.org/pods/TagCollectionView)
 [![License](https://img.shields.io/cocoapods/l/TagCollectionView.svg?style=flat)](http://cocoapods.org/pods/TagCollectionView)
 [![Platform](https://img.shields.io/cocoapods/p/TagCollectionView.svg?style=flat)](http://cocoapods.org/pods/TagCollectionView)

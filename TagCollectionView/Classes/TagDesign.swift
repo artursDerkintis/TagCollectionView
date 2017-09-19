@@ -13,7 +13,7 @@ public struct TagDesign {
     var cornerRadius: CGFloat = 0.0
     var borderWidth: CGFloat = 1.0
     var borderColor: UIColor = .white
-    var font: UIFont = UIFont.systemFont(ofSize: 8)
+    var font: UIFont = UIFont.systemFont(ofSize: 10)
     var textColor: UIColor = UIColor.white
     static var defaultSelectedDesign: TagDesign {
         return TagDesign(backgroudColor: .blue, cornerRadius: 0.0, borderWidth: 0.0, borderColor: .clear, font: UIFont.boldSystemFont(ofSize: 8), textColor: .white)

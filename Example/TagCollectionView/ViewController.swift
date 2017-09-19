@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var tags = [Tag]()
-        for i in 0...50 {
-            tags.append(Tag(title: "some tag \(i)"))
+        for i in 0...5000 {
+            tags.append(Tag(title: "tag \(i)"))
         }
         tagCollectionView.tags = tags
         tagCollectionView.selectedTags = [Tag(title: "some tag 30"), Tag(title: "some tag 45")]

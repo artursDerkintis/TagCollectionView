@@ -40,7 +40,6 @@ public class TagCollectionViewLayout: UICollectionViewFlowLayout {
             var frame = currentAttributes.frame
             frame.origin.x = sectionInset.left
             currentAttributes.frame = frame
-            print("T \(currentAttributes.frame)")
             return currentAttributes
         }
         let previousIndexPath = IndexPath(item: indexPath.item - 1, section: indexPath.section)
@@ -52,13 +51,11 @@ public class TagCollectionViewLayout: UICollectionViewFlowLayout {
                 var frame = currentAttributes.frame
                 frame.origin.x = sectionInset.left
                 currentAttributes.frame = frame
-                print("L \(currentAttributes.frame)")
                 return currentAttributes
             }
             var frame = currentAttributes.frame
             frame.origin.x = pp
             currentAttributes.frame = frame
-            print("X \(currentAttributes.frame)")
             return currentAttributes
         }
         return nil
